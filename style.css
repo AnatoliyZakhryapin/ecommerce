@@ -1,0 +1,28 @@
+header {
+    background-color: rgb(11, 11, 39);
+    color: white;
+    padd
+}
+.menu, .menu2{
+    padding: 50px;
+    display: none;
+    color: white;
+}
+
+.menu, .menu2, #flip, #flip2 {
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(29, 36, 71);
+    border: solid 1px #c3c3c3;
+    color: white;
+  }
+
+
+main {
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: rgba(151, 151, 151, 0.795);
+}
+
