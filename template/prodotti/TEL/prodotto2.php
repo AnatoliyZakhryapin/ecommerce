@@ -3,7 +3,7 @@
                 SAMSUNG Galaxy A33 5G Smartphone Android, Display Infinity-U FHD+ Super AMOLED 6.4”¹, 6GB RAM e 128GB di memoria interna espandibile², Batteria 5.000 mAh, Awesome Black [Versione Italiana]
             </h2>
             <div>
-                <img src="../amazone/foto/tel2.jpg" width="400px"> <br> 
+                <img src="<?php echo APP_URL; ?>foto/tel2.jpg" width="400px"> <br> 
             </div>
             <h3>
                 Prezzo

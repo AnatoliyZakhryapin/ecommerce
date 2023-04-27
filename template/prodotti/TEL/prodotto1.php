@@ -3,7 +3,7 @@
                 Xiaomi Redmi Note 11S - Smartphone 6+128GB, Display AMOLED 6.43” 90Hz FHD+, MediaTek Helio G96, fotocamera professionale 108MP, 5000mAh, Graphite Grey (versione IT + 2 anni di garanzia.
             </h2>
             <div>
-                <img src="http://127.0.0.1/amazone/foto/tel1.jpg" width="400px"> <br> 
+                <img src="<?php echo APP_URL; ?>foto/tel1.jpg" width="400px"> <br> 
             </div>
             <h3>
                 Prezzo

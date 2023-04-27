@@ -1,7 +1,6 @@
 
 <div id="flip">Menu</div>
-
-<menu class="menu">
+<menu class="menu" id="main-menu">
     <ul>
         <li><a href="index.php">Home</a></li>
         <li> 
@@ -9,15 +8,15 @@
             <div class="menu2"> 
 
                     <ol>
-                        <li><a href="Telefonia.php">Telefonia</a></li>
-                        <li><a href="pc.php">Pc</a></li>
-                        <li><a href="grandielettrodomestici.php">Grandi elettrodomestici</a></li>
-                        <li><a href="piccolielettrodomestici.php">Piccoli elettrodomestici</a></li>
+                        <li><a href="<?php echo APP_URL; ?>Telefonia.php">Telefonia</a></li>
+                        <li><a href="<?php echo APP_URL; ?>pc.php">Pc</a></li>
+                        <li><a href="<?php echo APP_URL; ?>grandielettrodomestici.php">Grandi elettrodomestici</a></li>
+                        <li><a href="<?php echo APP_URL; ?>piccolielettrodomestici.php">Piccoli elettrodomestici</a></li>
                     </ol>
             </div>
         </li>
-        <li><a href="servizioclienti.php">servizioclienti</a></li>
-        <li><a href="account.php">account</a></li>
+        <li><a href="<?php echo APP_URL; ?>servizioclienti.php">servizioclienti</a></li>
+        <li><a href="<?php echo APP_URL; ?>account.php">account</a></li>
     </ul>
 </menu>
 

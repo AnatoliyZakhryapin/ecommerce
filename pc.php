@@ -1,9 +1,7 @@
-<?php 
-    include 'template/inizio.php'
-?>
-
-<?php 
-    include "template/menu.php"
+<?php
+    include 'config/define.php';
+    include 'template/inizio.php';
+    include 'template/menu.php';
 ?>
 
 <main>
@@ -18,5 +16,5 @@
     </main>
       
 <?php 
-    include "template/footer.php"
+    include 'template/footer.php';
 ?>
