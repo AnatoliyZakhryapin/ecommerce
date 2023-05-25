@@ -20,4 +20,6 @@
     </ul>
 </menu>
 
-<div> Carrello <span id="cartItems">0</span></div>
+    <div> Carrello <span id="cartItems">0</span>
+        <button id="delite">Svuota carrello</button>
+    </div>
