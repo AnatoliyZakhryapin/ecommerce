@@ -13,11 +13,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     $(document).ready(function() {
-      function addCart() {
-              cartItems = 1*(cartItems+1);
-              $('#cartItems').html(cartItems);
-              localStorage.setItem('cartItems', cartItems);
-              alert(cartItems);
+      
+      let cartItems = Array.isArray(JSON.parse(localStorage.getItem("cartItems"))) ? JSON.parse(localStorage.getItem("cartItems")) : [];
+
+      function addCart(quantita, idProdotto) {
+              let presente = false;
+              for (let i = 0; i < cartItems.length; i++) {
+                if (cartItems[i].idProdotto == idProdotto) {
+                  cartItems[i].quantita += quantita;
+                  presente = true;
+                }
+              }
+              if (!presente) {
+                cartItems.push({quantita: quantita, idProdotto: idProdotto});
+              }
+              let totale = 0;
+              for (let i = 0; i < cartItems.length; i++) {
+                totale += cartItems[i].quantita;
+              }
+              $('#cartItems').html(totale);
+              localStorage.setItem('cartItems', JSON.stringify(cartItems));
       }
 
       function deliteCart() {
@@ -30,12 +45,15 @@
             };
             alert("ok");
       }
-
-      let cartItems = isNaN(parseInt(localStorage.getItem("cartItems"))) ? 0 : parseInt(localStorage.getItem("cartItems"));
-      $('#cartItems').html(cartItems);
+      
+      let tot = 0;
+      for (let i = 0; i < cartItems.length; i++) {
+        tot += cartItems[i].quantita;
+      }
+      $('#cartItems').html(tot);
       
       $("#add").click(function() {
-        addCart();
+        addCart(1, 'prod-01');
       });
 
       $("#delite").click(function(){
