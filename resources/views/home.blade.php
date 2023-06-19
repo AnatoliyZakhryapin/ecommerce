@@ -1,0 +1,10 @@
+<x-layout>
+    <x-header></x-header>
+    <x-navigation></x-navigation>
+    <x-collections></x-collections>
+    <x-newproducts></x-newproducts>
+    <x-hotdeal></x-hotdeal>
+    <x-topselling></x-topselling>
+    <x-newsletter></x-newsletter>
+    <x-footer></x-footer>
+</x-layout>
